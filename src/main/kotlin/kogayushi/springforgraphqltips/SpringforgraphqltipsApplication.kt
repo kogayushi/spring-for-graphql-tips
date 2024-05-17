@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class SpringforgraphqltipsApplication
 
 fun main(args: Array<String>) {
-	runApplication<SpringforgraphqltipsApplication>(*args)
+    runApplication<SpringforgraphqltipsApplication>(*args)
 }
