@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: springforgraphqltips
+  graphql:
+    graphiql:
+      enabled: true
