@@ -1,0 +1,21 @@
+extend type Query {
+    posts: [Post]
+}
+
+extend type Mutation {
+    createPost(input: CreatePostInput!): Post!
+}
+
+type Post {
+    id: ID!
+    content: String!
+    author: User!
+    thread: Thread!
+    likes: [Like!]!
+}
+
+input CreatePostInput {
+    content: String!
+    authorId: ID!
+    threadId: ID!
+}

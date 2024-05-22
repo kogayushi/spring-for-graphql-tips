@@ -1,0 +1,22 @@
+extend type Query {
+    threads: [Thread]
+}
+
+extend type Mutation {
+    createThread(input: CreateThreadInput!): Thread!
+}
+
+type Thread {
+    id: ID!
+    title: String!
+    content: String!
+    author: User!
+    posts: [Post!]!
+    tags: [Tag!]!
+}
+
+input CreateThreadInput {
+    title: String!
+    content: String!
+    authorId: ID!
+}

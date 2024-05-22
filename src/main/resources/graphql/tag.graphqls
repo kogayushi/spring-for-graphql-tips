@@ -1,0 +1,9 @@
+extend type Query {
+    tags: [Tag]
+}
+
+type Tag {
+    id: ID!
+    name: String!
+    threads: [Thread!]!
+}

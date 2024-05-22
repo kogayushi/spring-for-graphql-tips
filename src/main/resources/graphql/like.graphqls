@@ -1,0 +1,18 @@
+extend type Query {
+    likes: [Like]
+}
+
+extend type Mutation {
+    like(input: LikeInput!): Like!
+}
+
+type Like {
+    id: ID!
+    user: User!
+    post: Post!
+}
+
+input LikeInput {
+    postId: ID!
+    userId: ID!
+}
